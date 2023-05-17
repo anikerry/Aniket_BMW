@@ -1,0 +1,9 @@
+aniket_bmw_model_best
+en_pipeline-0.0.0-py3-none-any
+https://huggingface.co/Anikerry/en_pipeline/resolve/main/en_pipeline-any-py3-none-any.whl
+
+python -m spacy package ./en_ner_fashion ./output --build wheel
+python -m spacy huggingface-hub push en_pipeline-0.0.0-py3-none-any.whl
+
+
+python -m spacy package ./aniket_bmw_model_best ./output --build wheel
